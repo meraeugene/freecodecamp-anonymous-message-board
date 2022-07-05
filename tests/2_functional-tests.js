@@ -34,7 +34,7 @@ suite("Functional Tests", function() {
                     done();
                 });
             });
-            test("Deleting a thread with the incorrect password: Delete request to /api/threads/{board} with an invalid delete_password", function (done) {
+            test("Deleting a thread with the incorrect password: DELETE request to /api/threads/{board} with an invalid delete_password", function (done) {
             chai
                 .request(server)
                 .delete("/api/threads/test-board")
@@ -46,7 +46,7 @@ suite("Functional Tests", function() {
                     done();
                 });
             });
-            test("Reporting a thread: Put request to /api/threads/{board}", function (done) {
+            test("Reporting a thread: PUT request to /api/threads/{board}", function (done) {
                 console.log("testThread_id", testThread_id);
                 chai
                     .request(server)
@@ -76,7 +76,7 @@ suite("Functional Tests", function() {
                     done();
                 });
             });
-            test("Viewing a single thread with all replies: Get request to /api/replies/{board}", function (done) {
+            test("Viewing a single thread with all replies: GET request to /api/replies/{board}", function (done) {
                 chai
                 .request(server)
                 .get("/api/replies/test-board")
@@ -130,7 +130,7 @@ suite("Functional Tests", function() {
                     done();
                 });
             });
-            test("Deleting a reply with the correct password: Delete request to /api/replies/{board} with a valid delete_password", function (done) {
+            test("Deleting a reply with the correct password: DELETE request to /api/replies/{board} with a valid delete_password", function (done) {
                 chai
                     .request(server)
                     .delete("/api/replies/test-board")
@@ -146,7 +146,7 @@ suite("Functional Tests", function() {
                     done();
                     });
                 });
-                test("Deleting a thread with the correct password: Delete request to /api/threads/{board} with a valid delete_password", function (done) {
+                test("Deleting a thread with the correct password: DELETE request to /api/threads/{board} with a valid delete_password", function (done) {
                 chai
                 .request(server)
                 .delete("/api/threads/test-board")
